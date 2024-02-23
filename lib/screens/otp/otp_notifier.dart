@@ -113,7 +113,7 @@ class OtpNotifier extends ChangeNotifier {
   void onClickResend() {
     if (maxResendAttempts >= 1 && isResendButtonEnabled) {
       maxResendAttempts = maxResendAttempts--;
-      startTime = 5;
+      startTime = 170;
       invalidOTP = null;
       _startTimer();
       notifyListeners();
